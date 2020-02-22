@@ -20,7 +20,7 @@ h2, h3 {
     margin: 15px;
 }
 
-h2{
+h2 {
     margin: 10px 0;
 }
 
@@ -40,10 +40,11 @@ ul li li {
     border-radius: 25%;
 }
 
-ul li ul li{
+ul li ul li {
     display: flex;
 }
-ul li ul li a{
+
+ul li ul li a {
     flex: 1 1 100%;
     border-radius: 25%;
     padding: 10px;
@@ -70,12 +71,12 @@ a:hover {
     color: black;
 }
 
-a:active{
+a:active {
     background-color: #A9A9A9;
     color: black;
 }
 
-footer{
+footer {
     text-align: left;
     margin: 50px 10px 10px 10px;
 }
@@ -89,16 +90,39 @@ footer{
     color: black;
 }
 
-#project{
+#container2 {
+    width: 70%;
+    margin: auto;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: inherit;
+    color: black;
+}
+
+#project {
     margin-top: 20px;
 }
 
-#Ik{
-    margin-top: 80px;
+#Ik {
+    margin: 80px 10px;
+    padding: 20px;
+    border: 3px solid #ED735A;
+    border-radius: 25%;
+    transition: all 1s;
 }
 
-#ik p{
-    padding-top: 100px;
+#hobby {
+    position: relative;
+}
+
+#rillaar_link {
+    position: absolute;
+    top: 95%;
+    left: 5px;
+}
+
+.groeien:hover {
+    transform: scale(1.1);
 }
 
 .geen_opsomming {
@@ -119,6 +143,24 @@ footer{
     background-size: contain;
     filter: opacity(75%);
     transition: all 1200ms ease-in-out;
+}
+
+.bgimg2 {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #F04C25;
+    background-image: url(../Logo_TM/TM_logo_oranje_cmyk.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.caption{
+    position: absolute;
+    top: 35%;
+    left: 45%;
 }
 
 .titel {
@@ -152,9 +194,22 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-    .bgimg1{
+    #container {
+        margin: auto;
+        width: unset;
+
+    }
+
+    #rillaar_link {
+        position: absolute;
+        top: 95%;
+        left: 0;
+    }
+
+    .bgimg1 {
         height: 320px;
     }
+
     .titel {
         filter: none;
         position: absolute;
