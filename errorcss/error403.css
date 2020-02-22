@@ -1,0 +1,19 @@
+/* stijlregels die enkel voor 403 van toepassing zijn */
+.rotatie:hover{
+    transform: rotate(360deg) scale(1.1);
+    transition: all 800ms;
+}
+
+#img{
+    margin: 5% 35%;
+}
+
+#img_klein{
+    padding: 20px 50px;
+}
+
+@media screen and (max-width: 670px) {
+    #img{
+        margin: 30px 50px;
+    }
+}

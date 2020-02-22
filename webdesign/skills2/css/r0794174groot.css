@@ -1,0 +1,72 @@
+/*groot scherm*/
+
+body {
+    background-color: #ccc;
+    color: #000;
+    background-image: url(../images/patroon.png);
+}
+
+div {
+    max-width: 850px;
+    margin: auto;
+    background-color: #fff;
+    padding: 25px;
+}
+
+figure {
+    width: 640px;
+    margin: 20px auto;
+}
+
+
+nav ul {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+
+}
+
+nav li {
+    flex: 1 1 100%;
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    flex: 1 1 100%;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+a:link {
+    background-color: #009cab;
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: orange;
+    color: #009cab;
+}
+
+a:visited {
+    background-color: transparent;
+    color: firebrick;
+}
+
+footer a:link{
+    background-color: transparent;
+    color: black;
+}
+
+footer a:hover {
+    background-color: orange;
+    color: #009cab;
+}
+
+footer a:visited {
+    background-color: transparent;
+    color: black;
+}

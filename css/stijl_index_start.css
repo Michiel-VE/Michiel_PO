@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Niramit', sans-serif;
+    background-color: lavender;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+h1,
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    margin: 15px;
+}
+
+h2{
+    margin: 10px 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li li {
+    margin: 10px 0;
+    border: 1px dashed black;
+    border-collapse: collapse;
+    border-radius: 25%;
+}
+
+ul li ul li{
+    display: flex;
+}
+ul li ul li a{
+    flex: 1 1 100%;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+a {
+    background-color: inherit;
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    background-color: transparent;
+    color: maroon;
+}
+
+a:focus {
+    background-color: silver;
+    color: black;
+}
+
+a:hover {
+    background-color: silver;
+    color: black;
+}
+
+a:active{
+    background-color: #A9A9A9;
+    color: black;
+}
+
+footer{
+    text-align: left;
+    margin: 50px 10px 10px 10px;
+}
+
+#container {
+    width: 70%;
+    margin: auto;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: inherit;
+    color: black;
+}
+
+#project{
+    margin-top: 20px;
+}
+
+#Ik{
+    margin-top: 80px;
+}
+
+#ik p{
+    padding-top: 100px;
+}
+
+.geen_opsomming {
+    list-style-type: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.bgimg1 {
+    height: 750px;
+    background-color: #F04C25;
+    background-image: url(../Logo_TM/TM_logo_oranje_cmyk.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: opacity(75%);
+    transition: all 1200ms ease-in-out;
+}
+
+.titel {
+    height: 100px;
+    filter: none;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .bgimg1 {
+        background-image: url(../Logo_TM/TM_logo_oranje_cmyk.svg);
+        background-position: center top;
+        background-size: contain;
+        height: 450px;
+    }
+
+    .titel {
+        filter: none;
+        position: absolute;
+        top: 88%;
+        left: 28%;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .bgimg1{
+        height: 320px;
+    }
+    .titel {
+        filter: none;
+        position: absolute;
+        top: 70%;
+        left: 25%;
+    }
+}
