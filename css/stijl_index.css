@@ -27,6 +27,7 @@ h2 {
 p {
     text-align: justify;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 ul {
@@ -112,13 +113,18 @@ footer {
 }
 
 #hobby {
+    margin: 80px 10px;
+    padding: 20px;
     position: relative;
+    border: 3px solid #ED735A;
+    border-radius: 25%;
+    transition: all 1s;
 }
 
 #rillaar_link {
     position: absolute;
-    top: 95%;
-    left: 5px;
+    top: 80%;
+    left: 10%;
 }
 
 .groeien:hover {
@@ -157,7 +163,7 @@ footer {
     background-size: contain;
 }
 
-.caption{
+.caption {
     position: absolute;
     top: 35%;
     left: 45%;
@@ -183,7 +189,7 @@ footer {
     .titel {
         filter: none;
         position: absolute;
-        top: 88%;
+        top: 90%;
         left: 28%;
     }
 
@@ -191,6 +197,20 @@ footer {
         justify-content: center;
     }
 
+    #rillaar_link {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #rillaar_link {
+        position: absolute;
+        top: 46%;
+        left: 5%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -198,12 +218,6 @@ footer {
         margin: auto;
         width: unset;
 
-    }
-
-    #rillaar_link {
-        position: absolute;
-        top: 95%;
-        left: 0;
     }
 
     .bgimg1 {
@@ -215,5 +229,11 @@ footer {
         position: absolute;
         top: 70%;
         left: 25%;
+    }
+
+    .caption {
+        position: absolute;
+        top: 35%;
+        left: 35%;
     }
 }
