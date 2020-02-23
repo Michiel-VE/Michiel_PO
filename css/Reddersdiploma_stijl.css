@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-image: url(../Foto/background.png);
     font-size: 16px;
     line-height: 24px;
@@ -11,13 +11,14 @@ body{
     font-family: 'Niramit', sans-serif;
 }
 
-#container{
+#container {
     background-color: aliceblue;
-    width: 80%;
-    margin: auto;
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 15px;
     border-bottom: 3px solid black;
@@ -31,12 +32,49 @@ h2, h3 {
     margin: 15px;
 }
 
-img{
-    outline: 5px solid black;
-    outline-offset: -5px;
-    background-color: white;
-    color: transparent;
+p {
+    margin: auto;
+    padding: 10px;
+}
+
+a {
+    background-color: inherit;
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    background-color: transparent;
+    color: maroon;
+}
+
+a:focus {
+    background-color: silver;
+    color: black;
+}
+
+a:hover {
+    background-color: silver;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a:active {
+    background-color: #A9A9A9;
+    color: black;
+}
+
+img {
     max-width: 100%;
     height: auto;
-    margin: auto;
+}
+
+footer {
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+}
+
+footer a {
+    text-align: center;
 }
