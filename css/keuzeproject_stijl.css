@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Niramit', sans-serif;
+    background-color: lavender;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);
+    background-size: 2em 2em;
+    background-color: #232323;
+}
+
+h1{
+    background-color: transparent;
+    color: white;
+    padding-top: 20px;
+}
+
+h1,
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    margin-top: 20px;
+}
+
+p {
+    margin: 20px auto;
+}
+
+a {
+    background-color: inherit;
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    background-color: transparent;
+    color: maroon;
+}
+
+a:focus {
+    background-color: silver;
+    color: black;
+}
+
+a:hover {
+    background-color: silver;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+footer{
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+}
+
+footer a {
+    text-align: center;
+}
+
+#container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 25px 20px;
+    text-align: justify;
+    background-color: whitesmoke;
+    color: black;
+    border: 3px solid lawngreen;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px limegreen;
+}
+
+#cyberdev {
+    position: relative;
+}
+
+#cyberdev_link {
+    position: absolute;
+    top: 88%;
+    left: 2%;
+}
+
+#sites {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    padding: 20px;
+}
+
+#sites a:focus {
+    background-color: transparent;
+    color: black;
+}
+
+#sites a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#sites a:visited {
+    background-color: transparent;
+    color: maroon;
+    padding: 0;
+    margin: 0;
+}
+
+.plaatsing_oud {
+    position: absolute;
+    top: 25%;
+    left: 30px;
+}
+
+.plaatsing_nieuw {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.center {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        width: unset;
+        margin: 50px 30px;
+    }
+}

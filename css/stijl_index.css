@@ -32,23 +32,15 @@ p {
 
 ul {
     list-style-type: none;
+    padding: 20px;
 }
 
-ul li li {
-    margin: 10px 0;
-    border: 1px dashed black;
-    border-collapse: collapse;
-    border-radius: 25%;
+ul li {
+    margin: 20px 0;
 }
 
-ul li ul li {
-    display: flex;
-}
-
-ul li ul li a {
-    flex: 1 1 100%;
-    border-radius: 25%;
-    padding: 10px;
+ul li a {
+    padding: 5px;
 }
 
 a {

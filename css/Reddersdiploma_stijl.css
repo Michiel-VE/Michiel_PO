@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../Foto/background.png);
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+    font-family: 'Niramit', sans-serif;
+}
+
+#container{
+    background-color: aliceblue;
+    width: 75%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 3px solid black;
+}
+
+h1,
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    margin: 15px;
+}
+
+img{
+    outline: 5px solid black;
+    outline-offset: -5px;
+    background-color: white;
+    color: transparent;
+}
