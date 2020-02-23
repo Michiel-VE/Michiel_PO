@@ -13,7 +13,7 @@ body{
 
 #container{
     background-color: aliceblue;
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
@@ -36,4 +36,7 @@ img{
     outline-offset: -5px;
     background-color: white;
     color: transparent;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
