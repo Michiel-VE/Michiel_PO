@@ -57,11 +57,13 @@ a:visited {
 a:focus {
     background-color: silver;
     color: black;
+    border-radius: 25px;
 }
 
 a:hover {
     background-color: silver;
     color: black;
+    border-radius: 25px;
 }
 
 a:active {
@@ -115,7 +117,7 @@ footer {
 
 #rillaar_link {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 10%;
 }
 
@@ -191,7 +193,7 @@ footer {
 
     #rillaar_link {
         position: absolute;
-        top: 80%;
+        top: 82%;
         left: 2%;
     }
 
@@ -200,7 +202,7 @@ footer {
 @media screen and (max-width: 768px) {
     #rillaar_link {
         position: absolute;
-        top: 48%;
+        top: 50%;
         left: 5%;
     }
 }
