@@ -1,1 +1,153 @@
 /* stijlregels die enkel voor 404 van toepassing zijn */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../errorimg/404_bg_groot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+a {
+    background-color: inherit;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+a:visited {
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px dashed black;
+}
+
+a:focus {
+    background-color: silver;
+    color: black;
+    border-radius: 50px;
+}
+
+a:hover {
+    background-color: silver;
+    color: black;
+    border-radius: 50px;
+}
+
+a:active {
+    background-color: #A9A9A9;
+    color: black;
+}
+
+
+#container {
+    max-width: 600px;
+    margin: 75px auto;
+    background-color: #FFCF7B;
+    color: black;
+    box-shadow: 0 0 45px 45px #FFCF7B;
+    border-radius: 30px;
+    border: none;
+    opacity: 0.8;
+}
+
+#container p, #container h1, #container ul {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-image: url(../errorimg/404_bg_mediumG.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #container {
+        width: 100%;
+        margin: 70px auto;
+        background-color: #E9D6C7;
+        color: black;
+        box-shadow: 0 0 50px 50px #E9D6C7;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-image: url(../errorimg/404_bg_mediumK.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #container {
+        width: 100%;
+        margin: 60px 100px;
+        background-color: #FFEEC2;
+        color: black;
+        box-shadow: 0 0 50px 50px #FFEEC2;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        background-image: url(../errorimg/404_bg_klein.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 400px auto 0;
+        background-color: #473E47;
+        color: wheat;
+        box-shadow: 0 0 50px 50px #473E47;
+    }
+
+    li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    a {
+        background-color: inherit;
+        color: wheat;
+        font-weight: bold;
+    }
+
+    a:visited {
+        background-color: transparent;
+        color: wheat;
+        border-bottom: 2px dashed black;
+    }
+
+    a:focus {
+        background-color: silver;
+        color: black;
+    }
+
+    a:hover {
+        background-color: silver;
+        color: black;
+    }
+
+    a:active {
+        background-color: silver;
+        color: black;
+    }
+}

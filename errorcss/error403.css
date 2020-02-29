@@ -1,19 +1,55 @@
 /* stijlregels die enkel voor 403 van toepassing zijn */
-.rotatie:hover{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(105, 105, 105);
+    background: linear-gradient(180deg, rgba(105, 105, 105, 1) 0%, rgba(128, 128, 128, 1) 25%, rgba(169, 169, 169, 1) 52%, rgba(192, 192, 192, 1) 77%, rgba(211, 211, 211, 1) 89%, rgba(220, 220, 220, 1) 100%);
+}
+
+h2{
+    border-bottom: 2px solid white;
+}
+
+.rotatie:hover {
     transform: rotate(360deg) scale(1.1);
     transition: all 800ms;
 }
 
-#img{
+#img {
     margin: 5% 35%;
 }
 
-#img_klein{
-    padding: 20px 50px;
+#img_klein {
+    padding: 20px 60px;
 }
 
 @media screen and (max-width: 670px) {
-    #img{
-        margin: 30px 50px;
+
+    h1{
+        position: absolute;
+        top: 70%;
+        left: 16%;
+    }
+
+    h2{
+        position: absolute;
+        top: 81%;
+        left: 30%;
+    }
+
+    #container{
+        box-shadow: none;
+        position: relative;
+        height: 700px;
+        margin: 10px;
+    }
+
+    #img {
+        position: absolute;
+        top: 5%;
+        left: 20%;
     }
 }
