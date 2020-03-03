@@ -50,6 +50,7 @@ a:visited {
 a:focus {
     background-color: silver;
     color: black;
+    border-radius: 10px;
 }
 
 a:hover {
