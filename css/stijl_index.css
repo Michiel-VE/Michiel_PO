@@ -147,11 +147,6 @@ footer {
     left: 10%;
 }
 
-#ColumnChart {
-    position: relative;
-    left: 30%;
-}
-
 #keuze {
     margin: 80px 10px;
     padding: 20px;
@@ -217,6 +212,10 @@ footer {
     left: 38%;
 }
 
+.center_grafiek{
+    transform: translateX(30%);
+}
+
 
 @media screen and (max-width: 960px) {
     ul {
@@ -229,10 +228,6 @@ footer {
         left: 2%;
     }
 
-    #ColumnChart {
-        position: relative;
-        left: 10%;
-    }
 
     .bgimg1 {
         background-image: url(../Logo_TM/TM_logo_oranje_cmyk.svg);
@@ -248,6 +243,10 @@ footer {
         left: 28%;
     }
 
+    .center_grafiek{
+        transform: translateX(10%);
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -257,9 +256,8 @@ footer {
         left: 5%;
     }
 
-    #ColumnChart {
-        position: relative;
-        left: 10%;
+    .center_grafiek{
+        transform: translateX(0);
     }
 }
 
@@ -270,9 +268,8 @@ footer {
 
     }
 
-    #ColumnChart {
-        position: relative;
-        left: 0%;
+    .center_grafiek{
+        transform: translateX(1px);
     }
 
     .bgimg1 {
