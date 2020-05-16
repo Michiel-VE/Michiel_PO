@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../Foto/background.png);
     font-size: 16px;
@@ -30,6 +34,29 @@ h2, h3 {
     font-style: italic;
     font-variant: small-caps;
     margin: 15px;
+}
+
+nav {
+    height: 100px;
+    background-color: whitesmoke;
+    color: unset;
+}
+
+nav ul {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1 1 auto;
+    display: flex;
+    color: black;
+}
+
+nav li a {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 p {

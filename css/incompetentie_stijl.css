@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../Foto/bg_incompetentie.png);
     background-repeat: no-repeat;
@@ -13,13 +17,43 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     font-variant: small-caps;
     font-size: 36px;
     line-height: 54px;
     text-align: center;
+}
+
+nav {
+    height: 100px;
+    background-color: whitesmoke;
+    color: unset;
+}
+
+nav ul {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1 1 auto;
+    display: flex;
+    color: black;
+}
+
+nav li a {
+    flex: 1 1 auto;
+    text-align: center;
+    color: black;
+    background-color: inherit;
+}
+
+nav li a:visited {
+    color: black;
+    background-color: inherit;
 }
 
 p {
@@ -52,6 +86,11 @@ a:hover {
     padding: 5px;
 }
 
+img {
+    width: 1600px;
+    height: 200px;
+}
+
 footer {
     border: 1px solid lightgray;
     padding: 10px 20px;
@@ -62,14 +101,14 @@ footer a {
     text-align: center;
 }
 
-#p1{
+#p1 {
     color: black;
     background-color: transparent;
     border: 2px solid rgba(192, 192, 192, 0.4);
     border-radius: 25px;
 }
 
-#p2{
+#p2 {
     color: snow;
     background-color: transparent;
     border: 2px solid rgba(172, 172, 172, 0.4);
@@ -83,8 +122,8 @@ footer a {
     padding: 25px 20px;
     text-align: justify;
     color: black;
-    background: rgb(0,54,255);
-    background: linear-gradient(0deg, rgba(0,54,255,1) 0%, rgba(91,130,244,1) 37%, rgba(133,185,247,1) 68%, rgba(53,187,233,1) 100%);
+    background: rgb(0, 54, 255);
+    background: linear-gradient(0deg, rgba(0, 54, 255, 1) 0%, rgba(91, 130, 244, 1) 37%, rgba(133, 185, 247, 1) 68%, rgba(53, 187, 233, 1) 100%);
 }
 
 .carousel-inner img {
@@ -99,6 +138,10 @@ footer a {
     background-color: black;
     border-radius: 50%;
     margin: 5px;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .carousel-indicators {

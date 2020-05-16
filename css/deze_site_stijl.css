@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../Foto/bg_deze_site.png);
     background-repeat: repeat;
@@ -30,6 +34,29 @@ h2 {
     text-align: center;
     border-bottom: 2px dashed rgba(255, 250, 250, 0.6);
     font-variant: small-caps;
+}
+
+nav {
+    height: 100px;
+    background-color: whitesmoke;
+    color: unset;
+}
+
+nav ul {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1 1 auto;
+    display: flex;
+    color: black;
+}
+
+nav li a {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 img {
@@ -75,7 +102,7 @@ a:hover {
     padding: 5px;
 }
 
-.icoon{
+.icoon {
     text-align: center;
     margin: 0;
     padding: 0;

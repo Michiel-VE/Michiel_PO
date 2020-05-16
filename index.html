@@ -29,6 +29,18 @@
 </head>
 
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html#Ik">Wie ben ik</a></li>
+            <li><a href="index.html#hobby">Hobby</a></li>
+            <li><a href="index.html#grafiek">Grafiek</a></li>
+            <li><a href="index.html#keuze">Studiekeuze</a></li>
+            <li><a href="index.html#container2">Bewijsstukken</a></li>
+        </ul>
+    </nav>
+</header>
+
 <div class="bgimg1">
     <div class="titel">
         <h1 class="d-none d-md-block ">Welkom op mijn webruimte!</h1>
@@ -71,8 +83,28 @@
                     <p class=" col-12 col-md-6">
                         Ik heb een blauwe gordel en ga bijna naar een bruine gordel, 2<sup>de</sup> hoogste gordel. Als
                         andere in de club een techniek moeilijk vinden helpen de hogere gordels elkaar. Hierdoor voelt
-                        iedreen zich thuis in de club en maken we allemaal veel plezier. Vooral tijdens het jaarlijks
-                        judo-weekend is de sfeer nooit te zoeken
+                        iedereen zich thuis in de club en maken we allemaal veel plezier. Vooral tijdens het jaarlijks
+                        judo-weekend is de sfeer nooit te zoeken!
+                    </p>
+                </div>
+            </article>
+            <section id="grafiek">
+                <div id="ColumnChart"></div>
+            </section>
+            <article id="keuze" class="groeien">
+                <h2>Studiekeuze</h2>
+                <div class="row">
+                    <p class=" col-12 col-md-6">
+                        Als verdere studiekeuze eerst twijfelde ik nog een beetje tussen APP en CSS. Nu neigt mijn keuze
+                        meer naar APP en vooral webdesign. Het programeren en van nul iets opbouwen vindt ik echt leuk.
+                        Soms is het wel wat moeilijk, maar je vindt voldoende informatie op verschillende websites.
+                    </p>
+                    <p class=" col-12 col-md-6">
+                        Onlang had ik een infosessie over pentesting. Het idee is heel tof, maar ik zie mij dit niet als
+                        beroep later doen. Ik weet dat er ook andere richtingen in CSS zijn, maar die zijn niet echt
+                        naar
+                        mijn gevoel. Alhoewel dat ik misschien nog wat extra happenings ga om wat meer info op te halen.
+                        Echter dit zal zijn om meer kennis te verkrijgen en niet om in verder te studeren
                     </p>
                 </div>
             </article>
@@ -91,11 +123,52 @@
         <li class="col-12 col-md-3"><a href="pagina/Incompetentie.html">Incompetentie</a></li>
     </ul>
 </div>
+
 <footer>
     <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a
         href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a
         href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
 </footer>
-</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
 
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Richting', 'Punt', {role: 'style'}],
+            ['APP/BI', 80.62, '#e0440e'],
+            ['IoT', 67.5, '#fa7e52'],
+            ['CCS', 65.73, '#0e99ad'],
+            ['Softskills', 60.02, '#3AB1C2'],
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+            {
+                calc: "stringify",
+                sourceColumn: 1,
+                type: "string",
+                role: "annotation"
+            },
+            2]);
+
+        var options = {
+            title: 'Skill verdeling ITF',
+            'width': 550,
+            'height': 400,
+            'backgroundColor': '#E6E6FA',
+            'fontSize': 18,
+            'lineHeight': 27,
+            bar: {groupWidth: "99%"},
+            legend: {position: "none"},
+        };
+
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('ColumnChart'));
+        chart.draw(view, options);
+    }
+</script>
+</body>
 </html>

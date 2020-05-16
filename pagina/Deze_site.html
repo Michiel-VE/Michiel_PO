@@ -28,10 +28,21 @@
 </head>
 
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#gekozen">Waarom gekozen?</a></li>
+            <li><a href="#leuk">Leuk?</a></li>
+            <li><a href="#mooi">Wat vind je ervan?</a></li>
+            <li><a href="#richting">Richting</a></li>
+            <li><a href="#nav">Navigatie</a></li>
+        </ul>
+    </nav>
+</header>
 <div id="container">
     <h1>Deze site</h1>
     <div class="row">
-        <div class="card col-12 col-md-6">
+        <div id="gekozen" class="card col-12 col-md-6">
             <a href="../index.html">
                 <img class="card-img-top " src="../Foto/deze_site_4.PNG" alt="Afbeelding startpagina"
                      title="Afbeelding startpagina">
@@ -48,7 +59,7 @@
                 </p>
             </div>
         </div>
-        <div class="card col-12 col-md-6">
+        <div id="leuk" class="card col-12 col-md-6">
             <a href="../pagina/Keuzeproject.html">
                 <img class="card-img-top" src="../Foto/deze_site_2.PNG" alt="Afbeelding bouw Keuzeproject 1"
                      title="Afbeelding bouw Keuzeproject 1">
@@ -66,11 +77,11 @@
                 </p>
             </div>
         </div>
-        <div class="card col-12 col-md-6">
+        <div id="mooi" class="card col-12 col-md-6">
             <img class="card-img-top" src="../Foto/deze_site_1.PNG" alt="Afbeelding bouw deze site"
                  title="Afbeelding bouw deze site">
             <div class="card-body">
-                <h2>Wat vindt je ervan?</h2>
+                <h2>Wat vind je ervan?</h2>
                 <p class="card-text">
                     Persoonlijk vind ik dat de sites die ik maak er nog redelijk goed uitzien en dat ze goed zijn
                     geschreven. Hiermee bedoel ik dat er geen&#47;weinig errors of waarschuwingen zijn. Dat maakt het
@@ -83,7 +94,7 @@
             </div>
 
         </div>
-        <div class="card col-12 col-md-6">
+        <div id="richting" class="card col-12 col-md-6">
             <img class="card-img-top" src="../Foto/deze_site_3.PNG" alt="Afbeelding bouw css-bestanden"
                  title="Afbeelding bouw css&#8211;bestanden">
             <div class="card-body">
@@ -94,19 +105,23 @@
                     hier wat meer info over te vinden gebruik ik het keuzenproject. Het eerste was APP en als
                     2<sup>de</sup> ga ik waarschijnlijk voor CCS kiezen.
                 </p>
+                <p class="card-text">
+                    Nu het jaar al wat verder is en zoals in al zei op de startpagina, is mijn keuze al wat veranderd
+                </p>
                 <p class="icoon">
                     <i class="fas fa-map-signs fa-3x"></i>
                 </p>
             </div>
         </div>
     </div>
+    <h2 class="mt-3">Navigatie</h2>
     <footer>
-        <nav class="row">
+        <section id="nav" class="row">
             <a class="col-12 col-lg-3" href="../index.html">Startpagina</a>
             <a class="col-12 col-lg-3" href="../pagina/Keuzeproject.html">Keuzeproject</a>
             <a class="col-12 col-lg-3" href="../pagina/Reddersdiploma.html">Reddersdiploma</a>
             <a class="col-12 col-lg-3" href="../pagina/Incompetentie.html">Incompetentie</a>
-        </nav>
+        </section>
     </footer>
 </div>
 </body>
